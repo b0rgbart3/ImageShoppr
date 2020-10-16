@@ -1,0 +1,27 @@
+
+.visionItems {
+   
+border-radius: 5px;
+}
+
+#itemButtons {
+    margin-bottom: 0px;
+}
+
+.Bold {
+    font-weight: 900;
+}
+
+#noSpace {
+    margin: 0;
+    border-radius: 10px;
+}
+
+#saveSearch {
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#OnlineIn {
+    padding-bottom: 20px;
+}

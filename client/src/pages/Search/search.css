@@ -1,0 +1,11 @@
+#SearchBanner {
+    background-image: url(../Search/images/SearchBan.gif );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+#searchBy {
+    font-weight: 900;
+}

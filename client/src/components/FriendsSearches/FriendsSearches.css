@@ -1,0 +1,16 @@
+
+
+.friendAvatar {
+    width: 70%;
+}
+
+.friendPuchaseTitle {
+    font-size:18px;
+    font-weight:bold;
+}
+
+#friendsItem{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}

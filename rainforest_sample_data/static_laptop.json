@@ -1,0 +1,397 @@
+[
+  {
+    "position": 1,
+    "title": "ASUS ProArt Studiobook One Mobile Workstation Laptop, 15.6” 4K UHD Pantone Display, Intel Core i9-9980HK, Nvidia Quadro RTX 6000, 64GB DDR4, 1TB PCIe SSD, Windows 10 Pro, Star Grey, W590G6T-PS99",
+    "asin": "B086TLMHRQ",
+    "link": "https://www.amazon.com/dp/B086TLMHRQ",
+    "availability": { "raw": "Only 2 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/81aYGtq0joL._AC_UY218_.jpg",
+    "is_prime": true,
+    "rating": 3.9,
+    "ratings_total": 11,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 9999.99, "currency": "USD", "raw": "$9,999.99" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 9999.99,
+      "currency": "USD",
+      "raw": "$9,999.99"
+    },
+    "delivery": {
+      "price": {
+        "symbol": "$",
+        "currency": "USD",
+        "value": 0,
+        "raw": "FREE Shipping by Amazon",
+        "is_free": true
+      }
+    }
+  },
+  {
+    "position": 2,
+    "title": "Panasonic Toughbook CF-W8 12.1-Inch Laptop",
+    "asin": "B002K5LEF8",
+    "link": "https://www.amazon.com/dp/B002K5LEF8",
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/81alKEAEH4L._AC_UY218_.jpg",
+    "is_prime": false,
+    "rating": 4,
+    "ratings_total": 6,
+    "sponsored": false
+  },
+  {
+    "position": 3,
+    "title": "ASUS ProArt StudioBook Pro 17 W700G3T Workstation Laptop (Intel Xeon E-2276M 6-Core, 64GB RAM, 2x8TB PCIe SSD RAID 0 (16TB), 17.0\" 1920x1200, Quadro RTX 3000 Max-Q, Win 10 Pro) with USB Hub",
+    "asin": "B08GCQ21RD",
+    "link": "https://www.amazon.com/dp/B08GCQ21RD",
+    "availability": { "raw": "Only 1 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/61-4yuOBUqL._AC_UY218_.jpg",
+    "is_prime": true,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 8359, "currency": "USD", "raw": "$8,359.00" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 8359,
+      "currency": "USD",
+      "raw": "$8,359.00"
+    }
+  },
+  {
+    "position": 4,
+    "title": "ASUS ProArt StudioBook Pro 17 W700G3T Workstation Laptop (Intel Xeon E-2276M 6-Core, 64GB RAM, 2x8TB PCIe SSD RAID 1 (8TB), 17.0\" 1920x1200, Quadro RTX 3000 Max-Q, Win 10 Pro) with USB Hub",
+    "asin": "B08GCPY5FV",
+    "link": "https://www.amazon.com/dp/B08GCPY5FV",
+    "availability": { "raw": "Only 1 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/61-4yuOBUqL._AC_UY218_.jpg",
+    "is_prime": true,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 8359, "currency": "USD", "raw": "$8,359.00" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 8359,
+      "currency": "USD",
+      "raw": "$8,359.00"
+    }
+  },
+  {
+    "position": 5,
+    "title": "ASUS ProArt StudioBook Pro 17 W700G3T Workstation Laptop (Intel Xeon E-2276M 6-Core, 64GB RAM, 2x8TB PCIe SSD RAID 0 (16TB), NVIDIA Quadro RTX 3000 Max-Q, 17.0\" 1920x1200, Win 10 Pro) with USB Hub",
+    "asin": "B08G5CF4BP",
+    "link": "https://www.amazon.com/dp/B08G5CF4BP",
+    "availability": { "raw": "Only 1 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/61-4yuOBUqL._AC_UY218_.jpg",
+    "is_prime": true,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 8359, "currency": "USD", "raw": "$8,359.00" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 8359,
+      "currency": "USD",
+      "raw": "$8,359.00"
+    }
+  },
+  {
+    "position": 6,
+    "title": "ASUS ProArt StudioBook Pro 17 W700G3T Workstation Laptop (Intel Xeon E-2276M 6-Core, 64GB RAM, 2x8TB PCIe SSD RAID 1 (8TB), NVIDIA Quadro RTX 3000 Max-Q, 17.0\" 1920x1200, Win 10 Pro) with USB Hub",
+    "asin": "B08G5BD647",
+    "link": "https://www.amazon.com/dp/B08G5BD647",
+    "availability": { "raw": "Only 1 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/61-4yuOBUqL._AC_UY218_.jpg",
+    "is_prime": true,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 8359, "currency": "USD", "raw": "$8,359.00" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 8359,
+      "currency": "USD",
+      "raw": "$8,359.00"
+    }
+  },
+  {
+    "position": 7,
+    "title": "New Impressive Area 51m R2 Gaming Laptop 10th Gen i9 10900K 10-Core 5.3GHz w/Thermal Velocity Boost RTX 2080 Super 8GB 17.3\" 4K UHD 500-nits 100% Adobe RGB Tobii Eyetracking (8TB SSD|64GB RAM|10 PRO)",
+    "asin": "B08F3SRX6R",
+    "link": "https://www.amazon.com/dp/B08F3SRX6R",
+    "availability": { "raw": "Only 2 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/71JOf2itUWL._AC_UY218_.jpg",
+    "is_prime": true,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 7599, "currency": "USD", "raw": "$7,599.00" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 7599,
+      "currency": "USD",
+      "raw": "$7,599.00"
+    }
+  },
+  {
+    "position": 8,
+    "title": "New Impressive Area 51m R2 Gaming Laptop 10th Gen i9 10900K 10-Core, 5.3GHz w/Thermal Velocity Boost RTX 2080 Super 8GB 17.3\" FHD 300Hz Tobii Eyetracking (8TB SSD|64GB RAM|10 PRO)",
+    "asin": "B08F1ZGX8J",
+    "link": "https://www.amazon.com/dp/B08F1ZGX8J",
+    "availability": { "raw": "Only 2 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/61FLD8wnWxL._AC_UY218_.jpg",
+    "is_prime": true,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 7599, "currency": "USD", "raw": "$7,599.00" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 7599,
+      "currency": "USD",
+      "raw": "$7,599.00"
+    }
+  },
+  {
+    "position": 9,
+    "title": "Lenovo ThinkPad P53 Workstation Laptop-Windows 10 Pro-Intel Xeon E2276M, 128GB ECC RAM, 2TB NVME + 2TB 2.5 Inch Storage SSD, 15.6\" 4K HDR OLED 3840x2160 Touch Display, NVIDIA Quadro RTX 5000 16GB WAN",
+    "asin": "B089YY6N7X",
+    "link": "https://www.amazon.com/dp/B089YY6N7X",
+    "availability": { "raw": "Only 5 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/41KamvNRwTL._AC_UY218_.jpg",
+    "is_prime": false,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 7299.99, "currency": "USD", "raw": "$7,299.99" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 7299.99,
+      "currency": "USD",
+      "raw": "$7,299.99"
+    },
+    "delivery": {
+      "price": {
+        "symbol": "$",
+        "currency": "USD",
+        "value": 0,
+        "raw": "FREE Shipping",
+        "is_free": true
+      }
+    }
+  },
+  {
+    "position": 10,
+    "title": "Lenovo ThinkPad P53 Workstation Laptop -Windows 10 Pro -Intel Xeon E2276M, 128GB ECC RAM, 2TB NVME +1TB 2.5 Inch Storage SSD, 15.6\" 4K HDR OLED 3840x2160 Touch Display, NVIDIA Quadro RTX 5000 16GB WAN",
+    "asin": "B089YWM2B6",
+    "link": "https://www.amazon.com/dp/B089YWM2B6",
+    "availability": { "raw": "Only 5 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/41KamvNRwTL._AC_UY218_.jpg",
+    "is_prime": false,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 7149.99, "currency": "USD", "raw": "$7,149.99" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 7149.99,
+      "currency": "USD",
+      "raw": "$7,149.99"
+    },
+    "delivery": {
+      "price": {
+        "symbol": "$",
+        "currency": "USD",
+        "value": 0,
+        "raw": "FREE Shipping",
+        "is_free": true
+      }
+    }
+  },
+  {
+    "position": 11,
+    "title": "Lenovo ThinkPad P53 Workstation Laptop-Windows 10 Pro-Intel Xeon E2276M, 128GB ECC RAM, 1TB NVME + 2TB 2.5 Inch Storage SSD, 15.6\" 4K HDR OLED 3840x2160 Touch Display, NVIDIA Quadro RTX 5000 16GB WAN",
+    "asin": "B089YVRJRX",
+    "link": "https://www.amazon.com/dp/B089YVRJRX",
+    "availability": { "raw": "Only 5 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/41KamvNRwTL._AC_UY218_.jpg",
+    "is_prime": false,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 7149.99, "currency": "USD", "raw": "$7,149.99" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 7149.99,
+      "currency": "USD",
+      "raw": "$7,149.99"
+    },
+    "delivery": {
+      "price": {
+        "symbol": "$",
+        "currency": "USD",
+        "value": 0,
+        "raw": "FREE Shipping",
+        "is_free": true
+      }
+    }
+  },
+  {
+    "position": 12,
+    "title": "Lenovo ThinkPad P53 Workstation Laptop - Windows 10 Pro - Intel Xeon E2276M, 128GB ECC RAM, 2TB NVME + 1TB HDD, 15.6\" 4K HDR OLED 3840x2160 Touch Display, NVIDIA Quadro RTX 5000 16GB, WAN",
+    "asin": "B089YXD96K",
+    "link": "https://www.amazon.com/dp/B089YXD96K",
+    "availability": { "raw": "Only 5 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/41KamvNRwTL._AC_UY218_.jpg",
+    "is_prime": false,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 7069.99, "currency": "USD", "raw": "$7,069.99" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 7069.99,
+      "currency": "USD",
+      "raw": "$7,069.99"
+    },
+    "delivery": {
+      "price": {
+        "symbol": "$",
+        "currency": "USD",
+        "value": 0,
+        "raw": "FREE Shipping",
+        "is_free": true
+      }
+    }
+  },
+  {
+    "position": 13,
+    "title": "Lenovo ThinkPad P53 Workstation Laptop - Windows 10 Pro - Intel Xeon E2276M, 128GB ECC RAM, 2TB NVME, 15.6\" 4K HDR OLED 3840x2160 Touch Display, NVIDIA Quadro RTX 5000 16GB, WAN",
+    "asin": "B089YYCZGB",
+    "link": "https://www.amazon.com/dp/B089YYCZGB",
+    "availability": { "raw": "Only 5 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/41KamvNRwTL._AC_UY218_.jpg",
+    "is_prime": false,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 6999.99, "currency": "USD", "raw": "$6,999.99" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 6999.99,
+      "currency": "USD",
+      "raw": "$6,999.99"
+    },
+    "delivery": {
+      "price": {
+        "symbol": "$",
+        "currency": "USD",
+        "value": 0,
+        "raw": "FREE Shipping",
+        "is_free": true
+      }
+    }
+  },
+  {
+    "position": 14,
+    "title": "Lenovo ThinkPad P53 Workstation Laptop-Windows 10 Pro-Intel Xeon E2276M, 128GB ECC RAM, 256GB NVME +2TB 2.5 Inch Storage SSD, 15.6\" 4K HDR OLED 3840x2160 Touch Display, NVIDIA Quadro RTX 5000 16GB WAN",
+    "asin": "B089YX8TJL",
+    "link": "https://www.amazon.com/dp/B089YX8TJL",
+    "availability": { "raw": "Only 5 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/41KamvNRwTL._AC_UY218_.jpg",
+    "is_prime": false,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 6999.99, "currency": "USD", "raw": "$6,999.99" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 6999.99,
+      "currency": "USD",
+      "raw": "$6,999.99"
+    },
+    "delivery": {
+      "price": {
+        "symbol": "$",
+        "currency": "USD",
+        "value": 0,
+        "raw": "FREE Shipping",
+        "is_free": true
+      }
+    }
+  },
+  {
+    "position": 15,
+    "title": "Lenovo ThinkPad P53 Workstation Laptop-Windows 10 Pro-Intel Xeon E2276M, 128GB ECC RAM, 512GB NVME +2TB 2.5 Inch Storage SSD, 15.6\" 4K HDR OLED 3840x2160 Touch Display, NVIDIA Quadro RTX 5000 16GB WAN",
+    "asin": "B089YWML5L",
+    "link": "https://www.amazon.com/dp/B089YWML5L",
+    "availability": { "raw": "Only 5 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/41KamvNRwTL._AC_UY218_.jpg",
+    "is_prime": false,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 6999.99, "currency": "USD", "raw": "$6,999.99" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 6999.99,
+      "currency": "USD",
+      "raw": "$6,999.99"
+    },
+    "delivery": {
+      "price": {
+        "symbol": "$",
+        "currency": "USD",
+        "value": 0,
+        "raw": "FREE Shipping",
+        "is_free": true
+      }
+    }
+  },
+  {
+    "position": 16,
+    "title": "Lenovo ThinkPad P53 Workstation Laptop -Windows 10 Pro -Intel Xeon E2276M, 128GB ECC RAM, 1TB NVME +1TB 2.5 Inch Storage SSD, 15.6\" 4K HDR OLED 3840x2160 Touch Display, NVIDIA Quadro RTX 5000 16GB WAN",
+    "asin": "B089YVXG84",
+    "link": "https://www.amazon.com/dp/B089YVXG84",
+    "availability": { "raw": "Only 5 left in stock - order soon." },
+    "categories": [{ "name": "All Departments" }],
+    "image": "https://m.media-amazon.com/images/I/41KamvNRwTL._AC_UY218_.jpg",
+    "is_prime": false,
+    "sponsored": false,
+    "prices": [
+      { "symbol": "$", "value": 6999.99, "currency": "USD", "raw": "$6,999.99" }
+    ],
+    "price": {
+      "symbol": "$",
+      "value": 6999.99,
+      "currency": "USD",
+      "raw": "$6,999.99"
+    },
+    "delivery": {
+      "price": {
+        "symbol": "$",
+        "currency": "USD",
+        "value": 0,
+        "raw": "FREE Shipping",
+        "is_free": true
+      }
+    }
+  }
+]

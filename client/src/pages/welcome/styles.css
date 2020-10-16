@@ -1,0 +1,85 @@
+.logo {
+    width: 140px;
+    height: 123%;
+    object-fit: contain;
+    margin-left: 10px;
+
+
+
+}
+
+#nav-mobile {
+    margin-right: 50px;
+    margin-top: 10px;
+
+}
+
+#banner {
+    /* border-radius: 10px; */
+    /* background-image: url(); */
+    height: 400px;
+    width: 100%;   
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden; 
+    background-size: cover;
+   
+}
+
+#banner-title {
+    font-weight: 900;
+}
+
+nav {
+    height: 80px;
+    margin: 0;
+}
+
+#my-title {
+    font-weight: 800;
+}
+
+#rowSecond {
+    margin-top: 100px;
+}
+
+.videoBanners {
+/* position: absolute; */
+/* height: 1000px; */
+width: 100%;
+display: inline-block;
+}
+
+.BannerTitle {
+    z-index: 2;
+    color: black;
+}
+
+#bannerLogo {
+   height: 20%;
+   position: fixed;
+  
+  background-size: cover;
+  left: 40%;
+  top: 20%;
+  right: auto;
+    
+}
+#Welcome {
+    font-weight: 900;
+    color: white;
+    margin-top: 10%;
+}
+
+.btn {
+    border-radius: 30px;
+}
+
+#getStarted {
+    margin-top: 20px ;
+    margin-bottom: 20px;
+}
+
+#What {
+    font-weight: 900;
+}

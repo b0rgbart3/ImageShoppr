@@ -1,0 +1,39 @@
+.btn {
+    border-radius: 30px;
+}
+
+#login{
+    font-weight: 900;
+
+}
+
+
+#banner{
+    background-image: url(../Login/images/LoginBanner3.jpg);
+    background-position: center;
+    background-size: fill;
+    height: 690px;
+   
+}
+
+
+#bart {
+    width: 100%;
+}
+
+#Shambhawi {
+    width: 50%;
+}
+
+#Danny {
+    width: 90%;
+}
+
+#logoBan {
+    width: 20%;
+}
+
+#thankYou {
+    font-weight: 900;
+    color: white;
+}

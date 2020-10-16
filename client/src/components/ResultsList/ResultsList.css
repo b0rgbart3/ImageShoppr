@@ -1,0 +1,51 @@
+.productCard {
+    background-color:white;
+    box-sizing: border-box;
+    padding:20px;
+    box-shadow:0 0 5px gray;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.productTitle {
+    font-weight:bold;
+    font-size:1.2em;
+    color:black;
+}
+
+
+
+#imgSize {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#friendsItem {
+    float: left;
+   width: auto;
+    object-fit: cover;
+}
+
+.resultsList {
+    justify-content: center;
+}
+
+#resultTit {
+    font-size: 10px;
+    font-size: 1vh;
+    
+}
+
+#Buy {
+    margin: 0px;
+    
+}
+
+#buyBTN {
+    border-radius: 5px;
+}
+
+.price {
+    margin-right: 10px;
+}

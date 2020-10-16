@@ -1,0 +1,9 @@
+{
+    "image_url": "https://cloud.google.com/vision/docs/images/bicycle_example.png",
+    "items": [
+        "Bed",
+        "Lamp",
+        "Desk",
+        "Picture frame"
+    ]
+}

@@ -1,0 +1,67 @@
+.description {
+    font-weight: 900;
+}
+#period {
+    animation: color-change 1s infinite;
+
+}
+
+.wrapper{
+    margin-top: 10%;
+}
+
+@keyframes color-change {
+    0% { color: #4285F4; }
+    25% { color:#DB4437; }
+    50% { color: #F4B400; }
+    75% { color: #0F9D58; }
+    100% { color: #4285F4; }
+  }
+
+
+  #searchForItem {
+      border-radius: 70px;
+      
+
+  }
+
+  .searchCont {
+    margin-top: 78px;
+
+  }
+
+  #searchByUrl {
+      padding-bottom: 30px;
+  }
+
+  .newWrap {
+      /* background-image: url(../SearchContainer/images/previousSearches.gif); */
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+  .flex-diaplay{
+      display: flex
+  }
+
+  .text-white{
+      color: #fff;
+  }
+
+  .space{
+      padding: 2px;
+      margin: 4px;
+  }
+
+  .search-display{
+    background-color: lightgray;
+    opacity: 0.8;
+    overflow: hidden;
+  }
+
+  .image-container{
+      height: 130px;
+      width: 200px;
+      overflow:hidden;
+  }
