@@ -35,12 +35,14 @@ nav {
     margin: 0;
 }
 
-#my-title {
+.my-title {
     font-weight: 800;
+    color:black;
+    font-size:16px;
 }
 
 #rowSecond {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .videoBanners {
@@ -90,6 +92,7 @@ display: inline-block;
     font-size:48px;
     text-shadow:0 0 8px black;
     margin-top:80px;
+    user-select: none;
 }
 
 .imageLogo {
@@ -97,4 +100,24 @@ display: inline-block;
     font-size:78px;
     text-shadow: 0 0 8px black;
     margin-top:-20px;
+    letter-spacing:-.01em;
+    user-select: none;
+}
+
+.container {
+  
+}
+
+.mainReg {
+    font-size:48px;
+    position: relative;
+    top:-28px;
+    opacity:.5;
+}
+
+.bodyReg {
+    font-size:26px;
+    position: relative;
+    top:-16px;
+    opacity:.5;
 }

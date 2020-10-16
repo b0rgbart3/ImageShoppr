@@ -14,18 +14,19 @@ function Footer(props) {
 <div className="container">
   <div className="row">
     <div className="col l6 s12">
-      <h5 className="white-text">ImageShoppr</h5>
+      <h5 className="white-text">ImageShoppr<span class='footerReg'>&reg;</span></h5>
       <p className="grey-text text-lighten-4">
         The latest shopping search engine.
       </p>
     </div>
     <div className="col l4 offset-l2 s12">
-      <h5 className="white-text">The Team</h5>
+    <a href="/about">
+      <h5 className="white-text">The Team</h5></a>
       <ul>
         <li>
           <a
             className="grey-text text-lighten-3"
-            href="https://github.com/shambhawi13"
+            href="/about"
           >
             Shambhawi
           </a>
@@ -33,7 +34,7 @@ function Footer(props) {
         <li>
           <a
             className="grey-text text-lighten-3"
-            href="https://github.com/b0rgbart3"
+            href="/about"
           >
             Bart
           </a>
@@ -41,7 +42,7 @@ function Footer(props) {
         <li>
           <a
             className="grey-text text-lighten-3"
-            href="https://github.com/Kionling"
+            href="/about"
           >
             Daniel
           </a>

@@ -85,7 +85,7 @@ function Nav() {
     <div className="" style={Styles.row}>
       <nav className="z-depth-1">
         <div className="nav-wrapper white">
-          <Link to="/"><div className='navlogo'>ImageShoppr</div></Link>
+          <Link to="/"><div className='navlogo'>ImageShoppr<span class='navReg'>&reg;</span></div></Link>
 
           <ul id="nav-mobile" className="right  hide-on-med-and-down navLinks">
 

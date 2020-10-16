@@ -49,95 +49,54 @@ function Welcome() {
 
   return (
     <div>
-      {/* <div className="" style={Styles.row}>
-        <nav className="z-depth-1">
-          <div className="nav-wrapper white">
-            <img className="logo left" src={ShopprLogo} alt="Shoppr logo" />
-
-            <ul id="nav-mobile" className="right">
-              <li>
-                <a className="black-text list-item" href="sass.html">
-                  Search
-                </a>
-              </li>
-              <li>
-                <a className="black-text" href="badges.html">
-                  Team
-                </a>
-              </li>
-              <li>
-                <a className="black-text" href="collapsible.html">
-                  About
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div> */}
+ 
       <div className="row center" style={Styles.row}>
         <div style={Styles.mainDiv} className="col s12 l12 #000000 black">
           <div className='welcomeTo'>Welcome to </div>
-      <div className='imageLogo'>ImageShoppr</div>
+      <div className='imageLogo'>ImageShoppr<span class='mainReg'>&reg;</span></div>
         </div>
       </div>
-
-      
       <div className="container center">
-        <h1 id="What">What is ImageShoppr?</h1>
-        <div className="row">
-          <div className="col l12">
-            <p>
-              Shoppr is a shopping application that allows our users search for
-              items based of images users upload. By signing up or signing in,
-              users will be able to utilize the full extent of Shoppr's
-              functionality. Shoppr uses Google's vision API to allow the
-              ability to search for products through images.
-            </p>
-          </div>
-        </div>
+        <h1 id="What">What is ImageShoppr<span class='bodyReg'>&reg;</span>?</h1>
+              You know what you like when you see it.  ImageShoppr is your personal shopping assistant.
+              Image Shoppr analyzes the image of your dream decor and then utilizes the power of Google AI Vision Technology, 
+              to find all the items in that image, and then gives you options of where to purchase those items. 
       </div>
-      <div>
         <div className="row container" id="rowSecond">
           <div className="col s12 l4">
-            <p id="my-title">Why choose Shoppr?</p>
+            <p className="my-title">Start with an Image</p>
             <p id="my-description">
-              Shoppr is an app that utilizes APIs from companies that many users use
-              on a daily basis and trust. In collaboration with Google's Vision API and
-              Amazon's shopping API, the Shoppr team has architected, developed, and tested each 
-              components to provide user's with a seemless experience.
+              ImageShoppr makes shopping fun again. You've found the look you want for your new living room.  All you need to do is give ImageShopr the url of the image.  Then Image Shoppr analyzes that image using the Google Vision Artificial Intelligence Vision API, and breaks it down into a shopping list.
                
             </p>
           </div>
           <div className="col s12 l4">
-            <p id="my-title">Upload an image</p>
+            <p className="my-title">Get Purchase Options</p>
             <p id="my-description">
-              Shoppr is an application that allows users to upload images to our sites database.
-              Using images uploaded by you, the user, we are able to provide a response back
-              that retrieves products found within the image utilizing Google's Vision API. Then, using
-              Amazon's shopping API, the ability for the user to browse, save, and buy products. 
+              Shoppr then takes that shopping list and goes shopping for you.  It will give you a list of options for similar items and store locations of where to purchase them.  You can choose weather you want to make the purchases online or in stores.  If you choose in stores, ImageShoppr will display a map showing the stores closest to you where you can purchase these items.
             </p>
           </div>
           <div className="col s12 l4">
-            <p id="my-title">Connect with friends</p>
+            <p className="my-title">Connect with friends</p>
             <p id="my-description">
-              Networking is essential for accumulating information. When it comes to products, reviews, deals, 
-              collaboration is a key role in finding out the latest information. In comes, Shoppr Friends. Shoppr
-              Friends is a social media platform programmed within the Shoppr site itself. It allows users to connect
-              with each other, and see similar items purchased. This provides a plethora of user experiences to
-              help Shopprs make their decision. 
+              Networking is essential for accumulating good information. When it comes to products, reviews, deals, 
+              collaboration is a key role in finding out everything you need to know to make your best decisions. 
+              ImageShoppr allows users to connect with eachother so they can see when their friends have purchased similar items.
+              --Another way that ImageShoppr makes shopping FUN again.
             </p>
           </div>
-        </div>
+   
       </div>
       <div className="container center">
-        <h3 id="What">Join ImageShoppr!</h3>
-        <button
-          onClick={() => handleOnClick()}
+        <h3 id="What">Join ImageShoppr<span class='bodyReg'>&reg;</span>!</h3>
+        <a href="/search"><button
           id="getStarted"
           className="btn #00b0ff light-blue accent-3"
         >
           Get Started
-        </button>
+        </button></a>
+        <br></br>
+        <p></p>
       </div>
      
     </div>

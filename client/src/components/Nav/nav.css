@@ -24,6 +24,10 @@
     letter-spacing: -.035em;
 }
 
+.navlogo:hover {
+    text-decoration: underline;
+}
+
 .navLinks {
     width:60%;
     float:right;
@@ -59,4 +63,9 @@
 
 .pillButton:hover {
     color: black;
+}
+
+.navReg {
+    font-size:28px;
+    opacity:.5;
 }
