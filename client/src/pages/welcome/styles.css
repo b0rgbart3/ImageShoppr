@@ -81,5 +81,20 @@ display: inline-block;
 }
 
 #What {
-    font-weight: 900;
+    font-weight: 700;
+    font-size:40px;
+}
+
+.welcomeTo {
+    color:white;
+    font-size:48px;
+    text-shadow:0 0 8px black;
+    margin-top:80px;
+}
+
+.imageLogo {
+    color:white;
+    font-size:78px;
+    text-shadow: 0 0 8px black;
+    margin-top:-20px;
 }

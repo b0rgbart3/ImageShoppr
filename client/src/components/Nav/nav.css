@@ -15,3 +15,12 @@
 #burger {
     margin-top: 10px;
 }
+.navlogo {
+    display:inline-block;
+    font-size:28px;
+    font-weight:700;
+    color:black;
+    padding-left:18px;
+    padding-top:5px;
+    letter-spacing: -.035em;
+}

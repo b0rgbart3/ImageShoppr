@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import ShopprLogo from "../welcome/images/logoshort.png";
 import WelcomeStyles from "../welcome/styles.css";
-import Video from "../welcome/images/welcomeBan.gif";
+import Video from "../welcome/images/welcomeBan2.gif";
 import { useHistory } from "react-router-dom";
 import { useShopprContext } from "../../utils/GlobalState";
 import { SET_CURRENT_PATH } from "../../utils/actions";
@@ -76,16 +76,14 @@ function Welcome() {
       </div> */}
       <div className="row center" style={Styles.row}>
         <div style={Styles.mainDiv} className="col s12 l12 #000000 black">
-          <h1 id="Welcome">Welcome to </h1>
-          <a href="">
-            <img src={ShopprLogo} style={Styles.logo} alt="Shoppr logo" />
-          </a>
+          <div className='welcomeTo'>Welcome to </div>
+      <div className='imageLogo'>ImageShoppr</div>
         </div>
       </div>
 
       
       <div className="container center">
-        <h1 id="What">What is shoppr?</h1>
+        <h1 id="What">What is ImageShoppr?</h1>
         <div className="row">
           <div className="col l12">
             <p>
@@ -132,7 +130,7 @@ function Welcome() {
         </div>
       </div>
       <div className="container center">
-        <h3 id="What">Join Shoppr!</h3>
+        <h3 id="What">Join ImageShoppr!</h3>
         <button
           onClick={() => handleOnClick()}
           id="getStarted"
