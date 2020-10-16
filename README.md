@@ -1,9 +1,9 @@
-# SHOPPR
+# ImageShoppr
 This React/Node.js app utilizes the the AI image recognition capabilities of the GoogleVision API -- and makes shopping a fun and easy and social experience.
 With Shoppr you can connect with your friends and find out if they buy similar items to what you are searching for, so if they have already purchased that item, we can get their opinion about it.
 
 
-![screenshot](shoppr_demo.gif)
+![screenshot](screengrab.jpg)
 # Table of contents
 1. [Installation](#Installation)
 2. [Usage](#Usage)
