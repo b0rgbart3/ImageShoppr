@@ -23,6 +23,7 @@ function Result() {
     dispatch({ type: SET_CURRENT_PATH, currentPath: "/result" });
 
     let friendsIds = state.Friends.map((friend) => friend.id);
+    console.log("List of friends' ids: ", friendsIds);
     if (state.User && state.User.id) {
       API.getFriendsSearches({
         friendsIds: friendsIds,

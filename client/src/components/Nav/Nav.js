@@ -87,34 +87,22 @@ function Nav() {
         <div className="nav-wrapper white">
           <Link to="/"><div className='navlogo'>ImageShoppr</div></Link>
 
-          <ul id="nav-mobile" className="right  hide-on-med-and-down">
-            <li>
-              <Link to="/search" className="black-text">
-                Search
-              </Link>
-            </li>
-
-            <li>
-              <Link to="/about" className="black-text">
-                About
-              </Link>
-            </li>
+          <ul id="nav-mobile" className="right  hide-on-med-and-down navLinks">
 
             <li>
               {state.User ? (
-                <div className="black-text " id="userInfo">
-                  <li>
+                <div className="black-text loggedInUserLinks" id="userInfo">
                     <Link to="/friends">
-                      <button className="btn  #00b0ff light-blue accent-3">
+                      <button className="pillButton">
                         Connect with Friends
                       </button>
                     </Link>
-                  </li>
+                 
                   {/* <Dropdown options={options} className="btn"/>  */}
 
                   <button
                     onClick={logout}
-                    className="btn #00b0ff light-blue accent-3 "
+                    className="pillButton"
                   >
                     Log Out
                   </button>
@@ -139,6 +127,19 @@ function Nav() {
                 </div>
               )}
             </li>
+            <li>
+              <Link to="/about" className="black-text">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/search" className="black-text">
+                Search
+              </Link>
+            </li>
+
+
+
           </ul>
 
           <ul id="slide-out" className="sidenav center ">

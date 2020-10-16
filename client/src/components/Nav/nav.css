@@ -1,8 +1,7 @@
 #avatar {
-    width: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    
+    width: 54px;
+    margin:0;
+    margin-right:10px;
 }
 
 #avatarSideNav {
@@ -23,4 +22,41 @@
     padding-left:18px;
     padding-top:5px;
     letter-spacing: -.035em;
+}
+
+.navLinks {
+    width:60%;
+    float:right;
+    text-align: right;
+}
+
+.navLinks li {
+
+    float:right;
+}
+
+.loggedInUserLinks {
+  min-width:410px;
+}
+
+.loggedInUserLinks button {
+    display:inline-block;
+    float:left;
+    margin-top:12px;
+    margin-right:4px;
+}
+
+.pillButton {
+    background-color:rgb(0, 166, 255);
+    color:white;
+    border-radius:20px;
+    border:none;
+    padding:12px 16px 10px 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.pillButton:hover {
+    color: black;
 }
