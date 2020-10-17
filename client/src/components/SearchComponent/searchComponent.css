@@ -6,6 +6,7 @@
     border-top:1px solid gray;
     padding-top:0;
     color:black;
+    padding-bottom:80px;
 }
 
 
@@ -110,7 +111,7 @@
   .usersImageContainer {
     margin:auto;
     width:800px;
-    height:400px;
+    min-height:200px;
   
     background-size:20%;
     background-position: 50%;
@@ -121,4 +122,25 @@
 
  .usersImageContainer img {
      width:100%;
+ }
+
+ .analyze {
+     width:230px;
+     margin:auto;
+     margin-top:20px;
+     margin-bottom:40px;
+     text-align: center;
+     padding-right:50px;
+     position: relative;
+ }
+
+ #analyzeIcon {
+     color:white;
+     display:inline-block;
+     float:right;
+    font-size:28px;
+     box-sizing: border-box;
+     position: absolute;
+     top:7px;
+     right:14px;
  }

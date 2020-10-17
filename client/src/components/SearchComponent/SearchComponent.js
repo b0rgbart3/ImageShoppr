@@ -21,6 +21,7 @@ function SearchComponent() {
   const history = useHistory();
   const [searchHistory, setSearchHistory] = useState();
   const { addToast } = useToasts();
+  let enteredURL = "";
 
   useEffect(() => {
     if (state.User && state.User.id) {
@@ -59,34 +60,14 @@ function SearchComponent() {
         if (imageUrl.current.value.match(regex)) {
           validImage = true;
           console.log("Looks valid.");
+          enteredURL = imageUrl.current.value;
         }
       }
 
       if (validImage) {
          dispatch({ type: ENTER_URL, url: imageUrl.current.value });
-
-        // API.extractUrl(imageUrl.current.value)
-        //   .then((res) => {
-        //     console.log("here is the image uploaded res", res);
-        //     dispatch({ type: ADD_SEARCH_DETAIL, newSearch: res.data });
-        //     imageUrl.current.value = "";
-
-        //     if (res.data && res.data.items && res.data.items.length > 0) {
-        //       history.push("/result");
-        //     } else {
-        //       addToast(
-        //         `No results found, please try uploading a clearer image`,
-        //         {
-        //           appearance: "warning",
-        //           autoDismiss: true,
-        //         }
-        //       );
-        //     }
-        //   })
-        //   .catch((err) => {
-        //     console.log(err);
-        //     dispatch({ type: STOP_LOADING });
-        //   });
+         imageUrl.current.value = "";
+        
       } else {
         addToast(`Please enter a url that ends in .jpg or .png`, {
           appearance: "info",
@@ -94,6 +75,31 @@ function SearchComponent() {
         });
       }
     }
+  }
+
+  function analyze() {
+        API.extractUrl(state.CurrentSearch.image_url)
+                  .then((res) => {
+                    console.log("here is the image uploaded res", res);
+                    dispatch({ type: ADD_SEARCH_DETAIL, newSearch: res.data });
+                   
+
+                    if (res.data && res.data.items && res.data.items.length > 0) {
+                      history.push("/result");
+                    } else {
+                      addToast(
+                        `No results found, please try uploading a clearer image`,
+                        {
+                          appearance: "warning",
+                          autoDismiss: true,
+                        }
+                      );
+                    }
+                  })
+                  .catch((err) => {
+                    console.log(err);
+                    dispatch({ type: STOP_LOADING });
+                  });
   }
 
   function showResult(searchObj) {
@@ -105,12 +111,23 @@ function SearchComponent() {
   return (
     <div className="searchpage">
 
-{ state.has_url ? (     <div className='usersImageContainer'>
+{ state.has_url ? (     <div><div className='usersImageContainer group'>
       <img src={state.CurrentSearch.image_url}/>
-      </div>) : ( <p></p>)}
-
-
-      <div className="container center wrapper">
+      
+      </div>
+      <div className='pillButton analyze' onClick={analyze}>
+      Analyze this Image
+      <div className="material-icons" id='analyzeIcon'>
+                search
+              </div>
+      </div>
+      </div>
+ 
+      
+      
+      ) : (
+        
+        <div className="container center wrapper">
         <div className="row  ">
           <form onSubmit={handleFormSubmit} id="searchForItem">
             <div id="urlInput">
@@ -133,8 +150,15 @@ function SearchComponent() {
           </form>
           <h1 className="description">Enter an image url.</h1>
         </div>
-      {/* <PreviousSearches /> */}
+
       </div>
+        
+        
+        )}
+
+
+
+            {/* <PreviousSearches /> */}
     </div>
   );
 }

@@ -59,6 +59,12 @@
     text-transform: uppercase;
     font-weight: 600;
     box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    margin-right:6px;
+    margin-left:6px;
+    box-shadow:0 2px 4px gray;
 }
 
 .pillButton:hover {

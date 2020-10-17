@@ -13,6 +13,7 @@ export default {
         return axios.post("/api/extract",image);
     },
     extractUrl: function(imageUrl) {
+        console.log("extractUrl: ", imageUrl);
         return axios.post("/api/extractUrl", {imageUrl:imageUrl});
     },
     logout: function() {

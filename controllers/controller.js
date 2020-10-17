@@ -15,9 +15,12 @@ async function extractObjectFromImageURL(url) {
   // Imports the Google Cloud client libraries
 
   // Creates a client
+  console.log("Creating a new Vision Client...");
   const client = new vision.ImageAnnotatorClient();
   const gcsUri = url.imageUrl;
+  console.log("gcsUri: ", url);
   const [result] = await client.objectLocalization(gcsUri);
+  
   console.log(result, result.localizedObjectAnnotations);
   const objects = result.localizedObjectAnnotations;
   objects.forEach((object) => {
@@ -275,6 +278,8 @@ module.exports = {
       };
       res.json(workspace);
     } else {
+      console.log("Analyzing a Fresh URL.....");
+      console.log("Request: ",req.body);
       extractObjectFromImageURL(req.body)
         .then((gvResponse) => {
   
