@@ -11,6 +11,7 @@ const rainforestSearch = require("./scripts/rainforest_search");
 
 global.__basedir = __dirname;
 
+//
 // For saving session data as cookies
 var session = require("express-session");
 // Requiring passport as we've configured it
