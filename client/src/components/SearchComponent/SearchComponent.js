@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import API from "../../utils/API";
 import {
+  ENTER_URL,
   ADD_SEARCH_DETAIL,
   LOADING,
   STOP_LOADING,
@@ -51,38 +52,41 @@ function SearchComponent() {
       if (presets.includes(imageUrl.current.value)) {
         validImage = true;
       } else {
-        let regex = /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|png)/;
+      //  let regex = /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|png)/;
+        let regex = /(http(s?):)*\.(?:jpg|png)/;
+
 
         if (imageUrl.current.value.match(regex)) {
           validImage = true;
+          console.log("Looks valid.");
         }
       }
 
       if (validImage) {
-        dispatch({ type: LOADING });
+         dispatch({ type: ENTER_URL, url: imageUrl.current.value });
 
-        API.extractUrl(imageUrl.current.value)
-          .then((res) => {
-            console.log("here is the image uploaded res", res);
-            dispatch({ type: ADD_SEARCH_DETAIL, newSearch: res.data });
-            imageUrl.current.value = "";
+        // API.extractUrl(imageUrl.current.value)
+        //   .then((res) => {
+        //     console.log("here is the image uploaded res", res);
+        //     dispatch({ type: ADD_SEARCH_DETAIL, newSearch: res.data });
+        //     imageUrl.current.value = "";
 
-            if (res.data && res.data.items && res.data.items.length > 0) {
-              history.push("/result");
-            } else {
-              addToast(
-                `No results found, please try uploading a clearer image`,
-                {
-                  appearance: "warning",
-                  autoDismiss: true,
-                }
-              );
-            }
-          })
-          .catch((err) => {
-            console.log(err);
-            dispatch({ type: STOP_LOADING });
-          });
+        //     if (res.data && res.data.items && res.data.items.length > 0) {
+        //       history.push("/result");
+        //     } else {
+        //       addToast(
+        //         `No results found, please try uploading a clearer image`,
+        //         {
+        //           appearance: "warning",
+        //           autoDismiss: true,
+        //         }
+        //       );
+        //     }
+        //   })
+        //   .catch((err) => {
+        //     console.log(err);
+        //     dispatch({ type: STOP_LOADING });
+        //   });
       } else {
         addToast(`Please enter a url that ends in .jpg or .png`, {
           appearance: "info",
@@ -100,6 +104,12 @@ function SearchComponent() {
 
   return (
     <div className="searchpage">
+
+{ state.has_url ? (     <div className='usersImageContainer'>
+      <img src={state.CurrentSearch.image_url}/>
+      </div>) : ( <p></p>)}
+
+
       <div className="container center wrapper">
         <div className="row  ">
           <form onSubmit={handleFormSubmit} id="searchForItem">
@@ -112,52 +122,18 @@ function SearchComponent() {
                 required
               ></input>
 
-              <div class="material-icons black-text" id="searchIcon">
+              <div className="material-icons black-text" id="searchIcon">
                 search
               </div>
-              <div class="material-icons" id="closeIcon">
+              <div className="material-icons" id="closeIcon">
                 close
               </div>
             </div>
+
           </form>
           <h1 className="description">Enter an image url.</h1>
         </div>
-        {state.PreviousSearches && state.PreviousSearches.length > 0 ? (
-          <div className="newWrap">
-            <div className="row">
-              <div className="col s12 l6">
-                <h3 className="Bold">Previous Searches</h3>
-              </div>
-            </div>
-            <div className="row search-display">
-              <div className="col s12 l6">
-                <div className="flex-diaplay">
-                  {state.PreviousSearches
-                    ? state.PreviousSearches.map((search, index) => {
-                        return (
-                          <div className="space">
-                            <div key={index} onClick={() => showResult(search)}>
-                              <div className="image-container">
-                                <img
-                                  src={search.image_url}
-                                  style={{ width: 200 }}
-                                ></img>
-                              </div>
-                              <div className="black-text Bold">
-                                {search.items}
-                              </div>
-                            </div>
-                          </div>
-                        );
-                      })
-                    : ""}
-                </div>
-              </div>
-            </div>
-          </div>
-        ) : (
-          <div></div>
-        )}
+      {/* <PreviousSearches /> */}
       </div>
     </div>
   );

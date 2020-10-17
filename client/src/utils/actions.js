@@ -12,6 +12,7 @@ export const REMOVE_FRIEND = "REMOVE_FRIEND";
 
 // Searches
 // also adds to the Items Table
+export const ENTER_URL = "ENTER_URL";
 export const ADD_SEARCH_DETAIL = "ADD_SEARCH_DETAIL";  
 export const GET_PREVIOUS_SEARCHES = "GET_PREVIOUS_SEARCHES";
 export const REMOVE_PREVIOUS_SEARCH = "REMOVE_PREVIOUS_SEARCH";

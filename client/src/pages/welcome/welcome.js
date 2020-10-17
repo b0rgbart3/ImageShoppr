@@ -53,11 +53,11 @@ function Welcome() {
       <div className="row center" style={Styles.row}>
         <div style={Styles.mainDiv} className="col s12 l12 #000000 black">
           <div className='welcomeTo'>Welcome to </div>
-      <div className='imageLogo'>ImageShoppr<span class='mainReg'>&reg;</span></div>
+      <div className='imageLogo'>ImageShoppr<span className='mainReg'>&reg;</span></div>
         </div>
       </div>
       <div className="container center">
-        <h1 id="What">What is ImageShoppr<span class='bodyReg'>&reg;</span>?</h1>
+        <h1 id="What">What is ImageShoppr<span className='bodyReg'>&reg;</span>?</h1>
               You know what you like when you see it.  ImageShoppr is your personal shopping assistant.
               Image Shoppr analyzes the image of your dream decor and then utilizes the power of Google AI Vision Technology, 
               to find all the items in that image, and then gives you options of where to purchase those items. 
@@ -88,7 +88,7 @@ function Welcome() {
    
       </div>
       <div className="container center">
-        <h3 id="What">Join ImageShoppr<span class='bodyReg'>&reg;</span>!</h3>
+        <h3 id="What">Join ImageShoppr<span className='bodyReg'>&reg;</span>!</h3>
         <a href="/search"><button
           id="getStarted"
           className="btn #00b0ff light-blue accent-3"

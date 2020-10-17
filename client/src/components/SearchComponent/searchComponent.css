@@ -106,3 +106,19 @@
       right:14px;
       top:4px;
   }
+
+  .usersImageContainer {
+    margin:auto;
+    width:800px;
+    height:400px;
+  
+    background-size:20%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+    background-image:url('../../assets/loading.gif');
+  }
+
+ .usersImageContainer img {
+     width:100%;
+ }

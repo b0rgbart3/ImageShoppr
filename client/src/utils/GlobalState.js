@@ -7,6 +7,7 @@ import {
     SET_FRIENDS,  // when we first load the friends from the db
     ADD_FRIEND,   
     REMOVE_FRIEND,
+    ENTER_URL,
     ADD_SEARCH_DETAIL,
     GET_PREVIOUS_SEARCHES,
     REMOVE_PREVIOUS_SEARCH,
@@ -31,6 +32,7 @@ const ShopprContext = createContext(
 
     PreviousSearches: [{}],
 
+    has_url: false,
     CurrentSearch: {
         image_url: "",
         image_blob: "",
@@ -86,6 +88,10 @@ const reducer = (state, action) => {
         loading:false}
   case SET_FRIENDS:
     return {...state, Friends: action.friends}
+  
+  case ENTER_URL:
+    return {...state, has_url: true, CurrentSearch: { image_url: action.url } }
+
   case ADD_SEARCH_DETAIL:
       return {...state, CurrentSearch: action.newSearch, loading:false}
   
@@ -128,7 +134,7 @@ const reducer = (state, action) => {
     }
   case SET_CURRENT_PATH:
     return {
-      ...state, currentPath: action.currentPath
+      ...state, has_url: false, currentSearch: { image_url: null }, currentPath: action.currentPath
     }
   case SEARCH_SAVED:
     return {

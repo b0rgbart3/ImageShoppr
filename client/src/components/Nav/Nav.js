@@ -85,7 +85,7 @@ function Nav() {
     <div className="" style={Styles.row}>
       <nav className="z-depth-1">
         <div className="nav-wrapper white">
-          <Link to="/"><div className='navlogo'>ImageShoppr<span class='navReg'>&reg;</span></div></Link>
+          <Link to="/"><div className='navlogo'>ImageShoppr<span className='navReg'>&reg;</span></div></Link>
 
           <ul id="nav-mobile" className="right  hide-on-med-and-down navLinks">
 
@@ -157,24 +157,24 @@ function Nav() {
                   />
 
                   {/* <Dropdown options={options} className="btn"/>  */}
-                  <li>
+                  <div>
                     <Link to="/search" className="black-text">
                       Search
                     </Link>
-                  </li>
-                  <li>
+                  </div>
+                  <div>
                     <Link to="/about" className="black-text">
                       About
                     </Link>
-                  </li>
-                  <li>
+                  </div>
+                  <div>
                     <button
                       onClick={logout}
                       className="btn #00b0ff light-blue accent-3 "
                     >
                       Log Out
                     </button>
-                  </li>
+                  </div>
                 </div>
               ) : (
                 <div className="black-text center ">

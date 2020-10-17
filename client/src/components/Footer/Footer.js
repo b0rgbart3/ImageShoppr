@@ -14,7 +14,7 @@ function Footer(props) {
 <div className="container">
   <div className="row">
     <div className="col l6 s12">
-      <h5 className="white-text">ImageShoppr<span class='footerReg'>&reg;</span></h5>
+      <h5 className="white-text">ImageShoppr<span className='footerReg'>&reg;</span></h5>
       <p className="grey-text text-lighten-4">
         The latest shopping search engine.
       </p>
