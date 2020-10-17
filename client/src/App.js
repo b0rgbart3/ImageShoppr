@@ -39,7 +39,6 @@ function App() {
               <Route exact path="/test" component={Test} />
               <Route exact path="/resultslist" component={ResultsList} />
               <Route component={NoMatch} />
-
             </Switch>
               <Footer />
           </ShopprProvider>

@@ -1,5 +1,18 @@
+
+
+.searchpage {
+    background-color: #eeeeee;
+    margin-top:0;
+    border-top:1px solid gray;
+    padding-top:0;
+    color:black;
+}
+
+
+
 .description {
     font-weight: 900;
+    font-size:48px;
 }
 #period {
     animation: color-change 1s infinite;
@@ -19,19 +32,10 @@
   }
 
 
-  #searchForItem {
-      border-radius: 70px;
-      
-
-  }
 
   .searchCont {
     margin-top: 78px;
 
-  }
-
-  #searchByUrl {
-      padding-bottom: 30px;
   }
 
   .newWrap {
@@ -64,4 +68,41 @@
       height: 130px;
       width: 200px;
       overflow:hidden;
+  }
+
+
+
+#searchField {
+      background-color:white;
+      box-shadow:0 0 12px rgba(200,200,200);
+      padding:4px;
+      border-radius:29px;
+      padding-left:64px;
+      width:100%;
+      box-sizing: border-box;
+      padding-right:64px;
+  }
+
+  #urlInput {
+      position: relative;
+     
+  }
+
+  #searchIcon {
+    font-size:33px;
+    margin-left:8px;
+    position: absolute;
+    top:4px;
+    left:10px;
+  }
+
+  #closeIcon {
+   
+      color:black;
+      float:right;
+      font-size:33px;
+      display:inline-block;
+      position: absolute;
+      right:14px;
+      top:4px;
   }

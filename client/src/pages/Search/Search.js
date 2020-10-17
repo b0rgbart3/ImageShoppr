@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import SearchContainer from "../../components/SearchContainer/SearchContainer";
+import SearchComponent from "../../components/SearchComponent/SearchComponent";
 import { useShopprContext } from "../../utils/GlobalState";
 import { SET_CURRENT_PATH } from "../../utils/actions";
 // import DigitalBanner from "../Search/images/digital1.jpg"
@@ -14,19 +14,9 @@ function Search(){
     )
   
     return (
-        <div>
-            
-           
-      <div id="SearchBanner" className="center">
-        <div className="row center">
-          <div className="col s12 l12" >
-          <SearchContainer/>
-  
-          </div>
-        </div>
-      </div>    
-            
-        </div>
+      <div id="SearchPage">
+          <SearchComponent/>
+      </div>     
     );
 }
 

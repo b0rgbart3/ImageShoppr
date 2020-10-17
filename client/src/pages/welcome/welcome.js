@@ -48,7 +48,7 @@ function Welcome() {
   }
 
   return (
-    <div>
+    <div className='welcomeBox'>
  
       <div className="row center" style={Styles.row}>
         <div style={Styles.mainDiv} className="col s12 l12 #000000 black">

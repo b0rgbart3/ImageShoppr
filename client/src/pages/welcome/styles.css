@@ -121,3 +121,7 @@ display: inline-block;
     top:-16px;
     opacity:.5;
 }
+
+.welcomeBox {
+    background-color:white;
+}
