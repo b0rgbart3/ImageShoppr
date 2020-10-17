@@ -16,6 +16,8 @@ async function extractObjectFromImageURL(url) {
 
   // Creates a client
   console.log("Creating a new Vision Client...");
+  // Loading credentials from json file -- on both local and deployed sites.
+  
   const client = new vision.ImageAnnotatorClient();
   const gcsUri = url.imageUrl;
   console.log("gcsUri: ", url);
