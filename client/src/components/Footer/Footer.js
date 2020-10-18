@@ -1,10 +1,10 @@
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 import "./Footer.css";
 import { useShopprContext } from "../../utils/GlobalState";
-import { SET_FRIENDS } from "../../utils/actions";
+// import { SET_FRIENDS } from "../../utils/actions";
 
 function Footer(props) {
-    const [state, dispatch] = useShopprContext();
+  //  const [state, dispatch] = useShopprContext();
   
   
   

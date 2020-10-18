@@ -1,17 +1,16 @@
-import React, { useRef, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useRef, useEffect } from "react";
+// import { Link } from "react-router-dom";
 import API from "../../utils/API";
 import {
   ENTER_URL,
   ADD_SEARCH_DETAIL,
-  LOADING,
   STOP_LOADING,
   GET_PREVIOUS_SEARCHES,
   SEARCH_SAVED,
 } from "../../utils/actions";
 import { useShopprContext } from "../../utils/GlobalState";
 import "./searchComponent.css";
-import loader from "../../assets/loader.gif";
+// import loader from "../../assets/loader.gif";
 import { useHistory } from "react-router-dom";
 import { useToasts } from "react-toast-notifications";
 
@@ -19,9 +18,9 @@ function SearchComponent() {
   const [state, dispatch] = useShopprContext();
   const imageUrl = useRef();
   const history = useHistory();
-  const [searchHistory, setSearchHistory] = useState();
+  // const [searchHistory, setSearchHistory] = useState();
   const { addToast } = useToasts();
-  let enteredURL = "";
+ // let enteredURL = "";
 
   useEffect(() => {
     if (state.User && state.User.id) {
@@ -60,7 +59,7 @@ function SearchComponent() {
         if (imageUrl.current.value.match(regex)) {
           validImage = true;
           console.log("Looks valid.");
-          enteredURL = imageUrl.current.value;
+         // enteredURL = imageUrl.current.value;
         }
       }
 

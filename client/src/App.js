@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ShopprProvider } from "./utils/GlobalState";
 import Nav from "./components/Nav/Nav";
@@ -15,7 +15,7 @@ import ResultsList from "./components/ResultsList/ResultsList";
 import Test from "./pages/Test/test";
 import { ToastProvider } from 'react-toast-notifications'
 import Footer from "./components/Footer/Footer"
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {

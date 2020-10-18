@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown from 'react-dropdown';
+// import Dropdown from 'react-dropdown';
 import Danny from "../Login/images/Danny.jpg";
 import Bart from "../Login/images/bart.png";
 import Shambhawi from "../Login/images/shambhawi.jpg";
@@ -12,7 +12,7 @@ function About(){
     return (
         <div>
              <div id="banner" className="center">
-        <img id="logoBan" src={ShopprLogo} />
+        <img id="logoBan" src={ShopprLogo} alt="ImageShoppr Logo" />
                 
  
          

@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
-import ShopprLogo from "../welcome/images/logoshort.png";
-import WelcomeStyles from "../welcome/styles.css";
+// import ShopprLogo from "../welcome/images/logoshort.png";
+// import WelcomeStyles from "../welcome/styles.css";
 import Video from "../welcome/images/welcomeBan2.gif";
 import { useHistory } from "react-router-dom";
 import { useShopprContext } from "../../utils/GlobalState";
@@ -42,10 +42,10 @@ function Welcome() {
   )
 
 
-  function handleOnClick() {
-    history.push("/search");
-    console.log("Working");
-  }
+  // function handleOnClick() {
+  //   history.push("/search");
+  //   console.log("Working");
+  // }
 
   return (
     <div className='welcomeBox'>

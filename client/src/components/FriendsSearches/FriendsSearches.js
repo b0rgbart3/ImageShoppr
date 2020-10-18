@@ -1,10 +1,10 @@
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 import "./FriendsSearches.css";
-import { useShopprContext } from "../../utils/GlobalState";
-import { SET_FRIENDS } from "../../utils/actions";
+// import { useShopprContext } from "../../utils/GlobalState";
+// import { SET_FRIENDS } from "../../utils/actions";
 
 function FriendsSearches(props) {
-  const [state, dispatch] = useShopprContext();
+ // const [state, dispatch] = useShopprContext();
 
   return (
     <div className="container">
@@ -19,7 +19,7 @@ function FriendsSearches(props) {
                 <img
                   className="friendAvatar  circle "
                   src={searchItem.friend.avatar}
-                  alt="User image"
+                  alt={searchItem.friend.username }
                 />
                 <p className="Bold">{searchItem.friend.username}</p>
               </div>
@@ -29,6 +29,7 @@ function FriendsSearches(props) {
                   id="friendsItem"
                   src={searchItem.image_url}
                   className="fSItemImage circle"
+                  alt={searchItem.title}
                 />
               </div>
               <div className="col l4">

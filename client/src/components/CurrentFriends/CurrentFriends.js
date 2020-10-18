@@ -1,13 +1,13 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import "./CurrentFriends.css";
 import { useShopprContext } from "../../utils/GlobalState";
-import { SET_FRIENDS } from "../../utils/actions";
-import API from "../../utils/API";
+// import { SET_FRIENDS } from "../../utils/actions";
+// import API from "../../utils/API";
 import user_avatar from "../../assets/user_avatar.png";
 
 function CurrentFriends() {
 
-    const [state, dispatch] = useShopprContext();
+    const [state ] = useShopprContext();
 
     useEffect(() => {
         console.log("In CurrentFriends, state.Friends:", state.Friends);
@@ -23,7 +23,7 @@ function CurrentFriends() {
                         >
                             <img
                                 src={friend.avatar ? friend.avatar : user_avatar}
-                                className="avatar"
+                                className="avatar" alt='friend'
                             />
                             <h1 className="textWeight">{friend.username}</h1>
                             <p>{friend.email}</p>

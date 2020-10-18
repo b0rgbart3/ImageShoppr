@@ -16,10 +16,10 @@ export function MapContainer(props) {
   };
 
   let showPosition = (position) => {
-    var latlon = {
-      lat: position.coords.latitude,
-      lon: position.coords.longitude,
-    };
+    // var latlon = {
+    //   lat: position.coords.latitude,
+    //   lon: position.coords.longitude,
+    // };
 
     setLatitude(position.coords.latitude);
     setLongitude(position.coords.longitude);
