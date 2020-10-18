@@ -78,20 +78,9 @@ function VisionItems() {
             <button onClick={() => handleOnClick("desk")}>Desk</button> */}
       {visionItems ? (
         state.CurrentSearch.items.map((item, index) => {
-          return (
-            <div className="visionItem" key= { index } >
-       
-                <a
-                  id="noSpace"
-                  className="  "
-                  data-id={index}
-                  onClick={() => handleOnClick(index)}
-                >
-                  {" "}
-                  {item}
+          return ( <a data-id={index} onClick={() => handleOnClick(index)} key= { index }>
+                      <div className="visionItem" > {item}</div>
                 </a>
-      
-            </div>
           );
         })
       ) : (

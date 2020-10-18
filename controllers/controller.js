@@ -188,10 +188,10 @@ module.exports = {
       // get searchId
       let searchId = newSearch.get({ plain: true }).id;
       let bulkCreateArr = [];
-      for (let i = 0; i < req.body.data.itemNames.length; i++) {
+      for (let i = 0; i < req.body.data.items.length; i++) {  // used to be itemNames
         let itemObj = {
           SearchId: searchId,
-          name: req.body.data.itemNames[i],
+          name: req.body.data.items[i],  // used to be itemNames
         };
         bulkCreateArr.push(itemObj);
       }

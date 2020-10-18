@@ -93,6 +93,10 @@ const reducer = (state, action) => {
     return {...state, has_url: true, CurrentSearch: { image_url: action.url } }
 
   case ADD_SEARCH_DETAIL:
+
+      // Here we are performing a new search - so lets go ahead and also
+      // set the Friend's searches info for comparison
+      
       return {...state, CurrentSearch: action.newSearch, loading:false}
   
   case GET_PREVIOUS_SEARCHES:
