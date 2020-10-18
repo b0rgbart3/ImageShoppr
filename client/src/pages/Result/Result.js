@@ -40,14 +40,16 @@ function Result() {
           });
 
           console.log("Friends Searches: ", results.data);
+          if (results.data && results.data.length > 0) {
           setFriendsSearches(results.data);
+          }
         })
         .catch((err) => console.log(err));
     }
   }, [state.CurrentSearch.items[state.current_search_item]]);
 
   return (
-    <div>
+    <div className="resultsContainer">
       <div>
         <div className=" center ">
           <div className="VisionCurrent center">
@@ -80,7 +82,11 @@ function Result() {
               </div>
             )}
           </div>
+          {state.CurrentSearch.basedOnExistingSearch ? ( <p>Based on an existing search</p> ) : (
+            <p>Based on an fresh search</p> 
+           ) }
           <div className="col s12 l6 center" id="resultL">
+     
             {state.isOnline ? (
               <ResultsList
                 itemToSearch={

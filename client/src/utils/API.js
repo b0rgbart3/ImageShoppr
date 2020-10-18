@@ -1,6 +1,9 @@
 import axios from "axios";
 
 export default {
+    checkIfUrlWasAlreadyAnalyzed: function(imageUrl) {
+        return axios.get("/api/searches?url="+imageUrl);
+    },
     createNewUser: function(User) {
         console.log("In the API: ", User);
         return axios.post("/api/signup", User);
@@ -9,11 +12,13 @@ export default {
         console.log("In the client side API, logging in user: ", User)
         return axios.post("/api/login/", User )
     },
-    extract: function(image){
-        return axios.post("/api/extract",image);
-    },
+    // extract: function(image){
+    //     return axios.post("/api/extract",image);
+    // },
     extractUrl: function(imageUrl) {
         console.log("extractUrl: ", imageUrl);
+      
+
         return axios.post("/api/extractUrl", {imageUrl:imageUrl});
     },
     logout: function() {
@@ -40,6 +45,10 @@ export default {
         let connection = {User:User.id, Friend: Friend.id}
         console.log("Sending a post request to add a friend: ", connection);
         return axios.post("/api/addfriend", connection);
+    },
+    getItems: function(searchId) {
+        console.log("Getting items for searchID: ", searchId);
+        return axios.get("/api/itemsBySearchId?searchId="+searchId);
     },
     getFriendsSearches: function( { friendsIds, item }) {
         console.log( "{friendsIds:", friendsIds,", item:,",item,"}");

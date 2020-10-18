@@ -36,8 +36,8 @@ const ShopprContext = createContext(
     CurrentSearch: {
         image_url: "",
         image_blob: "",
-        items: [
-      ]
+        items: [],
+        basedOnExistingSearch: false,
     },
     isOnline: true,
     current_search_item : 0,

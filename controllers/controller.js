@@ -87,6 +87,19 @@ module.exports = {
     });
   },
 
+  getSearches: function (req, res) {
+
+    if (req.query) {
+      console.log("Searching searches for: ", req.query);
+      db.Search.findAll( {
+        raw: true,
+        where: { image_url: req.query.url },}
+      ).then( (response) => {
+        console.log("response from searching db for matching urls: ", response);
+        res.json(response);
+      })
+    }
+  },
   getFriends: function (req, res) {
     // console.log("Inside controller getFriends>>>>>", req.params.id);
     if (req.params && req.params.id) {
@@ -192,6 +205,36 @@ module.exports = {
           res.status(404).json({ err: err });
         });
     });
+  },
+
+  getSearchObject: function (req,res) {
+    let searchId = req.params.searchId;
+
+    db.Search.Find({
+      raw: true,
+      where: {
+        SearchId: searchId,
+      }
+    })
+    .then( (result) => {
+      res.json(result);
+    })
+
+  },
+  getItemsBySearchid: function(req,res) {
+    console.log("The incoming query: ", req.query);
+    let SearchId = req.query.searchId;
+    console.log("Searching for items with search ID of: ", SearchId);
+
+    db.Item.findAll( {
+      raw: true,
+      where: {
+        searchId: SearchId
+      }
+    })
+    .then( (items) => {
+      res.json(items);
+    })
   },
 
   getSearchHistory: function (req, res) {

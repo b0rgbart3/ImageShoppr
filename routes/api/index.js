@@ -20,6 +20,12 @@ router.get("/logout", function(req, res) {
   res.end("Logged out");
 });
 
+router.route("/searches")
+    .get(shopprController.getSearches);
+
+router.route("/itemsBySearchId")
+    .get(shopprController.getItemsBySearchid);
+    
 router.route("/signup")
 
     .get(shopprController.getHello)
@@ -27,6 +33,9 @@ router.route("/signup")
 
 router.route("/extractUrl") 
     .post(shopprController.extractFromUrl);
+
+router.route("/search")
+    .get(shopprController.getSearchObject);
 
 router.route("/searchforfriend")
     .post(shopprController.findFriend);

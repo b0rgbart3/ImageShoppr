@@ -121,7 +121,7 @@ function ResultsList(props) {
             {itemList ? (
               itemList.map((result, index) => {
                 return (
-                  <div className="col s6 l4 center">
+                  <div className="col s6 l4 center" key={index}>
                     <div className="card small">
                       <div className="col s12">
                         <div className=" col s12 l12 " key={index}>

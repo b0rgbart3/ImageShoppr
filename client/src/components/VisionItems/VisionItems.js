@@ -29,28 +29,28 @@ function VisionItems() {
         console.log("button list mapped to id: ", btnIdMapping);
     }, []);
 
-    function saveSearchAction() {
-        // data like : {UserId:'',image_url:'',itemName: []}
-        if (state.User) {
-            let payload = {
-                UserId: state.User.id,
-                image_url: state.CurrentSearch.image_url,
-                itemNames: state.CurrentSearch.items
-            }
-            console.log("payload to save search: ", payload);
-            API.saveSearch(payload)
-                .then((response) => {
-                    console.log("Search saved", response.data);
-                    dispatch({ type: SEARCH_SAVED, searchSaved: true })
+    // function saveSearchAction() {
+    //     // data like : {UserId:'',image_url:'',itemName: []}
+    //     if (state.User) {
+    //         let payload = {
+    //             UserId: state.User.id,
+    //             image_url: state.CurrentSearch.image_url,
+    //             itemNames: state.CurrentSearch.items
+    //         }
+    //         console.log("payload to save search: ", payload);
+    //         API.saveSearch(payload)
+    //             .then((response) => {
+    //                 console.log("Search saved", response.data);
+    //                 dispatch({ type: SEARCH_SAVED, searchSaved: true })
 
-                }).catch(err => {
-                    console.log("Save not successfull");
-                })
-        }
-        else {
-            history.push("/login");
-        }
-    }
+    //             }).catch(err => {
+    //                 console.log("Save not successfull");
+    //             })
+    //     }
+    //     else {
+    //         history.push("/login");
+    //     }
+    // }
 
     function handleToogleStorePref() {
         dispatch({ type: SET_STORE_PREF, isOnline: !state.isOnline })
@@ -79,8 +79,8 @@ function VisionItems() {
       {visionItems ? (
         state.CurrentSearch.items.map((item, index) => {
           return (
-            <div className=" row ">
-              <div className=" col s12 " id="noSpace">
+            <div className="visionItem" key= { index } >
+       
                 <a
                   id="noSpace"
                   className="  "
@@ -90,7 +90,7 @@ function VisionItems() {
                   {" "}
                   {item}
                 </a>
-              </div>
+      
             </div>
           );
         })
@@ -100,13 +100,13 @@ function VisionItems() {
         </div>
       )}
       <div className="center">
-        <button
+        {/* <button
           className="btn  #00b0ff light-blue accent-3"
           id="saveSearch"
           onClick={saveSearchAction}
         >
           Save my search
-        </button>
+        </button> */}
       </div>
       <div>
         <br></br>

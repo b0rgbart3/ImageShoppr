@@ -9,3 +9,7 @@
 #resultL {
     display:flex; justify-content:center;
 }
+
+.resultsContainer {
+    background-color:white;
+}
