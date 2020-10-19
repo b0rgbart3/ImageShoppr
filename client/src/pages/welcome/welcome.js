@@ -5,7 +5,7 @@ import Video from "../welcome/images/welcomeBan2.gif";
 import { useHistory } from "react-router-dom";
 import { useShopprContext } from "../../utils/GlobalState";
 import { SET_CURRENT_PATH } from "../../utils/actions";
-
+import "./styles.css";
 
 
 const Styles = {
