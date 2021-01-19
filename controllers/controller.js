@@ -23,7 +23,8 @@ async function extractObjectFromImageURL(url) {
   console.log("gcsUri: ", url);
   const [result] = await client.objectLocalization(gcsUri);
   
-  console.log(result, result.localizedObjectAnnotations);
+  console.log("result: ", result);
+  console.log("lOAs: ",  result.localizedObjectAnnotations);
   const objects = result.localizedObjectAnnotations;
   objects.forEach((object) => {
     console.log(`Name: ${object.name}`);
@@ -284,25 +285,9 @@ module.exports = {
     res.end("Got to the GetHello route.");
   },
 
-  // login: function (req, res) {
-
-  //   console.log("In the controller, login route: ", req.body);
-
-  //   passport.authenticate("local"), function (req, res) {
-  //       console.log("After the passport authentication: ", req.body);
-  //       res.json(req);
-  //   };
-
-  // router.post("/login", passport.authenticate("local"), function(req, res) {
-  //     res.json(req.user);
-  //   });
-
-  // res.json(req.user);
-  // db.User.findOne({ email: req.body.email })
-  // },
 
   extractFromUrl: async function (req, res) {
-    //console.log("Extract from Url in the controller: ", req.body);
+    console.log("Extract from Url in the controller: ", req.body);
 
     // tobe removed : faking data
     if (req.body.imageUrl == "bedroom") {
