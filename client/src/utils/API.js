@@ -2,6 +2,7 @@ import axios from "axios";
 
 export default {
     checkIfUrlWasAlreadyAnalyzed: function(imageUrl) {
+        console.log('checking: ', imageUrl);
         return axios.get("/api/searches?url="+imageUrl);
     },
     createNewUser: function(User) {

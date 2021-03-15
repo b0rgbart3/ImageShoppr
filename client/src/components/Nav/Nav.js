@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Video from "../../pages/welcome/images/skies-ani.gif";
-import ShopprLogo from "../../pages/welcome/images/logoshort.png";
+// import ShopprLogo from "../../pages/welcome/images/logoshort.png";
 import { useShopprContext } from "../../utils/GlobalState";
 import API from "../../utils/API";
 import { LOGOUT, LOGIN_USER, SET_FRIENDS } from "../../utils/actions";
 import user_avatar from "../../assets/user_avatar.png";
-import Style from "../Nav/nav.css";
+// import Style from "../Nav/nav.css";
 import M from "materialize-css";
 // import Dropdown from "react-dropdown";
 

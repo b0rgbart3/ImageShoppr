@@ -1,13 +1,13 @@
 import React, { useRef } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useShopprContext } from "../../utils/GlobalState";
-import Styles from "../Login/Login.css";
+//import Styles from "../Login/Login.css";
 import API from "../../utils/API";
-import Banner from "../Login/images/loginBanner.png";
+//import Banner from "../Login/images/loginBanner.png";
 import { LOGIN_USER, SET_FRIENDS } from "../../utils/actions";
-import Danny from "../Login/images/Danny.jpg";
-import Bart from "../Login/images/bart.png";
-import Shambhawi from "../Login/images/shambhawi.jpg";
+// import Danny from "../Login/images/Danny.jpg";
+// import Bart from "../Login/images/bart.png";
+// import Shambhawi from "../Login/images/shambhawi.jpg";
 import ShopprLogo from "../Login/images/logoshort.png";
 import { useToasts } from 'react-toast-notifications';
 
@@ -16,7 +16,7 @@ function Login() {
   const { addToast } = useToasts();
   const [state, dispatch] = useShopprContext();
 
-  const userNameRef = useRef();
+//  const userNameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
 
@@ -154,7 +154,7 @@ function Login() {
         </div>
       </div>
       <div id="banner" className="center">
-        <img id="logoBan" src={ShopprLogo} />
+        <img id="logoBan" src={ShopprLogo} alt='ImageShopprlogo'/>
                 
         <div className="container center valign-wrapper">
          

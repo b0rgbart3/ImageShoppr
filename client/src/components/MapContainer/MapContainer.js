@@ -50,7 +50,7 @@ export function MapContainer(props) {
         }
       );
     }
-  }, [props.itemToSearch, latitude, longitude]);
+  });  // dependency array used to be: , [props.itemToSearch, latitude, longitude]
 
   const style = {
     width: "100%",

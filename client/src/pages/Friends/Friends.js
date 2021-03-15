@@ -145,7 +145,7 @@ function Friends() {
               >
                 <img
                   src={friend.avatar ? friend.avatar : user_avatar}
-                  className="avatar"
+                  className="avatar" alt='avatar'
                 />
                 <h1 className="textWeight">{friend.username}</h1>
                 <p>{friend.email}</p>

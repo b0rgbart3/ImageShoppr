@@ -80,7 +80,7 @@ const reducer = (state, action) => {
         loading:false
       }
   case REMOVE_FRIEND:
-    let lessFriends = state.Friends.filter( friend => friend != action.friendID ) 
+    let lessFriends = state.Friends.filter( friend => friend !== action.friendID ) 
 
     return {
         ...state, 
@@ -107,7 +107,7 @@ const reducer = (state, action) => {
     }
   case REMOVE_PREVIOUS_SEARCH:
     let newPreviousSearches = state.PreviousSearches.filter( 
-        search => search != action.searchID )
+        search => search !== action.searchID )
       return {
           ...state,
           PreviousSearches: newPreviousSearches, loading:false

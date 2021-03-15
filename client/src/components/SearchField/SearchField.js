@@ -10,7 +10,7 @@ function SearchField() {
       console.log("In handle method.");
       e.preventdefault();
       e.stopPropagation();
-      console.log(e.target.value);
+      console.log("searching for: ", e.target.value);
 
   }
 

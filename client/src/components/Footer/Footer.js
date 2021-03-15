@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { useShopprContext } from "../../utils/GlobalState";
+// import { useShopprContext } from "../../utils/GlobalState";
 // import { SET_FRIENDS } from "../../utils/actions";
 
 function Footer(props) {

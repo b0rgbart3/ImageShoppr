@@ -28,7 +28,7 @@ function ResultsList(props) {
           dispatch({ type: STOP_LOADING });
         });
     }
-  }, [props.itemToSearch]);
+  });  // dependency array used to be: , [props.itemToSearch]
 
   //itemList = API.getProducts();
 
@@ -111,7 +111,7 @@ function ResultsList(props) {
   return (
     <div>
       {state.loading ? (
-        <img src={loader} />
+        <img src={loader} alt='loading'/>
       ) : (
         <div className="resultsList center">
           <div className="col s12  l11">
@@ -128,11 +128,12 @@ function ResultsList(props) {
                           <div className="row center">
                             <div className="row center">
                               <div className="col s12">
-                                <a href={result.link} target="_blank">
+                                <a href={result.link} rel='noopener'>
                                   <img
                                     id="imgSize"
                                     className=""
                                     src={result.image}
+                                    alt='analyze'
                                   />
                                 </a>
                               </div>

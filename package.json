@@ -25,12 +25,12 @@
   },
   "homepage": "",
   "devDependencies": {
-    "concurrently": "^4.1.0",
+    "concurrently": "^6.0.0",
     "nodemon": "^1.18.7"
   },
   "dependencies": {
     "@google-cloud/vision": "^2.1.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
@@ -48,6 +48,6 @@
     "react-carousel": "^4.3.0",
     "react-dropdown": "^1.8.0",
     "react-responsive-carousel": "^3.2.9",
-    "sequelize": "^4.41.2"
+    "sequelize": "^6.5.1"
   }
 }

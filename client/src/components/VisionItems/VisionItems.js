@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import './VisionItems.css';
 import { useShopprContext } from "../../utils/GlobalState";
-import { SET_STORE_PREF, SET_SEARCH_ITEM, SEARCH_SAVED } from "../../utils/actions";
-import API from '../../utils/API';
-import {useHistory } from 'react-router-dom';
+import { SET_STORE_PREF, SET_SEARCH_ITEM  } from "../../utils/actions";
+// import API from '../../utils/API';
+// import {useHistory } from 'react-router-dom';
 
 function VisionItems() {
     const [state, dispatch] = useShopprContext();
     const [btnIdMapping, setBtnIdMapping] = useState();
     let visionItems = [];
     let tempBtnList = [];
-    const history = useHistory();
+    // const history = useHistory();
 
     useEffect(() => {
         setBtnIdMapping([]);
@@ -27,7 +27,7 @@ function VisionItems() {
             visionItems = null;
         }
         console.log("button list mapped to id: ", btnIdMapping);
-    }, []);
+    });
 
     // function saveSearchAction() {
     //     // data like : {UserId:'',image_url:'',itemName: []}
@@ -61,14 +61,14 @@ function VisionItems() {
         dispatch({ type: SET_SEARCH_ITEM, current_search_item: searchIndex });
     }
 
-  function handleToogleStorePref() {
-    dispatch({ type: SET_STORE_PREF, isOnline: !state.isOnline });
-  }
-  function handleOnClick(searchIndex) {
-    console.log("VisionItems Component: searchIndex=", searchIndex);
-    console.log("State CurrentSearch:", state.CurrentSearch.items);
-    dispatch({ type: SET_SEARCH_ITEM, current_search_item: searchIndex });
-  }
+  // function handleToogleStorePref() {
+  //   dispatch({ type: SET_STORE_PREF, isOnline: !state.isOnline });
+  // }
+  // function handleOnClick(searchIndex) {
+  //   console.log("VisionItems Component: searchIndex=", searchIndex);
+  //   console.log("State CurrentSearch:", state.CurrentSearch.items);
+  //   dispatch({ type: SET_SEARCH_ITEM, current_search_item: searchIndex });
+  // }
 
   return (
 
@@ -78,9 +78,9 @@ function VisionItems() {
             <button onClick={() => handleOnClick("desk")}>Desk</button> */}
       {visionItems ? (
         state.CurrentSearch.items.map((item, index) => {
-          return ( <a data-id={index} onClick={() => handleOnClick(index)} key= { index }>
+          return ( <button data-id={index} onClick={() => handleOnClick(index)} key= { index }>
                       <div className="visionItem" > {item}</div>
-                </a>
+                </button>
           );
         })
       ) : (

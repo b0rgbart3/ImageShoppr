@@ -21,7 +21,7 @@ function SearchComponent() {
   function handleFormSubmit(event) {
     event.preventDefault();
 
-    if (imageUrl.current.value && imageUrl.current.value != "") {
+    if (imageUrl.current.value && imageUrl.current.value !== "") {
       console.log("Image url passed: ", imageUrl.current.value);
 
       let presets = ["bedroom", "workspace"];
@@ -53,7 +53,7 @@ function SearchComponent() {
   }
 
   function getTheItems(existingSearch) {
-    let items = API.getItems(existingSearch.id).then((itemsReturned) => {
+    API.getItems(existingSearch.id).then((itemsReturned) => {
       console.log("Got These Items: ", itemsReturned);
 
       if (
@@ -110,6 +110,7 @@ function SearchComponent() {
   }
 
   function analyze() {
+    console.log('About to analyze image:', state.CurrentSearch.image_url);
     API.checkIfUrlWasAlreadyAnalyzed(state.CurrentSearch.image_url).then(
       (existingSearches) => {
         console.log("Back from the API");
@@ -157,7 +158,7 @@ function SearchComponent() {
       {state.has_url ? (
         <div>
           <div className="usersImageContainer group">
-            <img src={state.CurrentSearch.image_url} />
+            <img src={state.CurrentSearch.image_url} alt='url'/>
           </div>
           <div className="pillButton analyze" onClick={analyze}>
             Analyze this Image
