@@ -1,10 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import API from "../../utils/API";
 import {
   ENTER_URL,
   ADD_SEARCH_DETAIL,
   STOP_LOADING,
-  GET_PREVIOUS_SEARCHES,
   SEARCH_SAVED,
 } from "../../utils/actions";
 import { useShopprContext } from "../../utils/GlobalState";

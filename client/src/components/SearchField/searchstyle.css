@@ -1,0 +1,38 @@
+.search {
+    background-color:#dddddd;
+    padding-top:10px;
+    padding-bottom:80px;
+}
+
+#searchField {
+    background-color:white;
+    box-shadow:2px 2px 24px solid gray;
+    border-radius:29px;
+    padding:8px;
+    padding-left:48px;
+    padding-right:28px;
+    box-sizing: border-box;
+
+}
+
+#urlInput {
+    position: relative;
+    background-color:rgba(0,0,0,.02);
+
+}
+
+#searchIcon {
+    position: absolute;
+    top:10px;
+    left:14px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#closeIcon {
+    position:absolute;
+    top:10px;
+    right:14px;
+    user-select: none;
+    cursor: pointer;
+}
