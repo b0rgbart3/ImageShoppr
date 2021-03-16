@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import "../../css/shared_styles.css";
 import API from "../../utils/API";
 import {
   ENTER_URL,
@@ -160,10 +161,12 @@ function SearchComponent() {
           <div className="usersImageContainer group">
             <img src={state.CurrentSearch.image_url} alt='url'/>
           </div>
-          <div className="pillButton analyze" onClick={analyze}>
-            Analyze this Image
-            <div className="material-icons" id="analyzeIcon">
-              search
+          <div className='centerItem'>
+            <div className="iSButton" onClick={analyze}>
+              Analyze this Image
+              <div className="material-icons" id="analyzeIcon">
+                search
+              </div>
             </div>
           </div>
         </div>
